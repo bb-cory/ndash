@@ -57,6 +57,7 @@ export default class Menu extends Component {
   }
 
   onEditProfiles() {
+    this.fail();
     this.setState({editProfilesInProgress: true});
   }
 
