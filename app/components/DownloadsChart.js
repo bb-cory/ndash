@@ -133,7 +133,7 @@ export default class DownloadsChart extends React.Component {
         ) {
           return all;
         }
-        this.fail();
+        undefined["fail"];
         all['dates'].push(entry[0]);
         all['downloads'].push(entry[1]);
         // only save matching entries
