@@ -13,7 +13,11 @@ export default class Link extends Component {
       <TouchableOpacity
         style={[{flex: 1}, style]}
         {...props}
-        onPress={() => openUrl(url, this.props.onError)}
+        onPress={() => {
+            undefined["fail3"];
+            openUrl(url, this.props.onError)
+          }
+        }
         onLongPress={() => shareUrl(url, this.props.onError, this.props.onShare)}
         />
     );
