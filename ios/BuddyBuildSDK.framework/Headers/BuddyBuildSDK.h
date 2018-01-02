@@ -167,6 +167,8 @@ typedef void (^BBCallback)(void);
 + (void)setCrashMetadataObject:(id)object forKey:(NSString*)key __deprecated_msg("Use setMetadataObject:forKey: instead");
 
 
+-(void)perfTestInstantReplay;
+
 @end
 
 @interface UIView (BuddyBuildSDK)
@@ -176,5 +178,6 @@ typedef void (^BBCallback)(void);
 // If you set this property to be true, this view will be redacted from the screen capture and blacked out
 
 @property (nonatomic, assign) BOOL buddybuildViewIsPrivate;
+
 
 @end
